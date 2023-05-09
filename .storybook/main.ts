@@ -15,7 +15,11 @@ const config: StorybookConfig = {
   async viteFinal(config) {
     return mergeConfig(config, {
       resolve: {
-        alias: { $lib: path.resolve(__dirname, "../") },
+        alias: {
+          test: /\.scss$/,
+          use: ["style-loader", "css-loader", "sass-loader"],
+          $lib: path.resolve(__dirname, "../"), 
+        },
       },
     });
   },
