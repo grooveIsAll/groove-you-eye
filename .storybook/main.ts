@@ -1,3 +1,6 @@
+const { mergeConfig } = require("vite");
+const path = require("path");
+
 import type { StorybookConfig } from "@storybook/react-vite";
 const config: StorybookConfig = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
@@ -8,6 +11,13 @@ const config: StorybookConfig = {
   ],
   core: {
     builder: '@storybook/builder-vite', // 👈 The builder enabled here.
+  },
+  async viteFinal(config) {
+    return mergeConfig(config, {
+      resolve: {
+        alias: { $lib: path.resolve(__dirname, "../") },
+      },
+    });
   },
   framework: {
     name: "@storybook/react-vite",
