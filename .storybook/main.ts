@@ -10,23 +10,17 @@ const config: StorybookConfig = {
     "@storybook/addon-interactions",
   ],
   core: {
-    builder: "@storybook/builder-vite", // 👈 The builder enabled here.
+    builder: '@storybook/builder-vite',
   },
   async viteFinal(config) {
     return mergeConfig(config, {
       resolve: {
-        alias: { $lib: path.resolve(__dirname, "../*.scss") },
+        rules: {
+          test: /\.scss$/,
+          use: ["style-loader", "css-loader", "sass-loader"],
+          include: path.resolve(__dirname, "../"),
+        }
       },
-      // css: {
-      //   postcss: null,
-      //   preprocessorOptions: {
-      //     scss: {
-      //       additionalData: `
-      //               @import '../styles/base.scss';
-      //           `,
-      //     },
-      //   },
-      // },
     });
   },
   framework: {
