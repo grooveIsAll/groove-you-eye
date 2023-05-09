@@ -1,4 +1,4 @@
-import{j as e}from"./jsx-runtime-6eef64cc.js";import{M as o}from"./index-dabd185e.js";import{u as i}from"./index-dc1d5b46.js";import"./index-c013ead5.js";import"./_commonjsHelpers-725317a4.js";import"./iframe-1fdb32b2.js";import"../sb-preview/runtime.js";import"./index-d475d2ea.js";import"./index-f3e7a92e.js";import"./index-d37d4223.js";import"./index-356e4a49.js";function k(t={}){const{wrapper:n}=Object.assign({},i(),t.components);return n?e.jsx(n,Object.assign({},t,{children:e.jsx(r,{})})):r();function r(){const s=Object.assign({h1:"h1",p:"p",strong:"strong",code:"code",a:"a"},i(),t.components);return e.jsxs(e.Fragment,{children:[e.jsx(o,{title:"About/Introduction"}),`
+import{j as e}from"./jsx-runtime-6eef64cc.js";import{M as o}from"./index-7ab25d68.js";import{u as i}from"./index-dc1d5b46.js";import"./index-c013ead5.js";import"./_commonjsHelpers-725317a4.js";import"./iframe-068f966f.js";import"../sb-preview/runtime.js";import"./index-d475d2ea.js";import"./index-f3e7a92e.js";import"./index-d37d4223.js";import"./index-356e4a49.js";function k(t={}){const{wrapper:n}=Object.assign({},i(),t.components);return n?e.jsx(n,Object.assign({},t,{children:e.jsx(r,{})})):r();function r(){const s=Object.assign({h1:"h1",p:"p",strong:"strong",code:"code",a:"a"},i(),t.components);return e.jsxs(e.Fragment,{children:[e.jsx(o,{title:"About/Introduction"}),`
 `,e.jsx("style",{children:`
     .subheading {
       --mediumdark: '#999999';
@@ -122,4 +122,4 @@ View the source and add issues`]})})}),e.jsx("a",{className:"link-item",href:"ht
 Chat with maintainers and the community`]})})})]}),`
 `,e.jsx("div",{className:"tip-wrapper",children:e.jsxs(s.p,{children:[e.jsx("span",{className:"tip",children:"Tip"}),"Edit the Markdown in"," ",`
 `,e.jsx("code",{children:"stories/Introduction.stories.mdx"})]})})]})}}export{k as default};
-//# sourceMappingURL=Introduction-3e487027.js.map
+//# sourceMappingURL=Introduction-2494831e.js.map

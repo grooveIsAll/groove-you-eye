@@ -5,15 +5,10 @@ const config: StorybookConfig = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
-    // {
-    //   name: '@storybook/addon-styling',
-    //   options: {
-    //     sass: {
-    //       implementation: require('sass'),
-    //     },
-    //   },
-    // },
   ],
+  core: {
+    builder: '@storybook/builder-vite', // 👈 The builder enabled here.
+  },
   framework: {
     name: "@storybook/react-vite",
     options: {},
