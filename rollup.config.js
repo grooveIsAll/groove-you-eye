@@ -4,7 +4,7 @@ import commonjs from "@rollup/plugin-commonjs";
 import typescript from "rollup-plugin-typescript2";
 import postcss from "rollup-plugin-postcss";
 
-const packageJson = require("./package.json");
+import  packageJson from "./package.json" assert { type: "json" };
 
 export default {
   input: "src/components/index.ts",
@@ -27,6 +27,10 @@ export default {
     typescript({ useTsconfigDeclarationDir: true }),
     postcss({
       extensions: [".css", ".scss"],
+      extract: 'ui.css',
+      modules: true,
+      minimize: true,
+      use: ['sass']
     }),
   ],
 };
