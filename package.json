@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && rollup -c && sass --no-source-map styles/base.scss:ui/base.css",
+    "build": "tsc && vite build && rollup -c",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
@@ -50,11 +50,5 @@
     "style-loader": "^3.3.2",
     "typescript": "^5.0.2",
     "vite": "^4.3.2"
-  },
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "files": [
-    "dist"
-  ],
-  "types": "dist/index.d.ts"
+  }
 }
