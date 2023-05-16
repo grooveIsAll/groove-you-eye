@@ -14,7 +14,7 @@ const packageJson = requireFile('./package.json');
 
 
 export default [{
-  input: "src/components/index.ts",
+  input: "src/index.ts",
   output: [
     {
       file: packageJson.main,
@@ -34,9 +34,6 @@ export default [{
     typescript(),
     postcss({
       extensions: ['.css', '.scss'],
-      modules: true,
-      minimize: true,
-      use: ['sass']
     })
   ]
 }, {
